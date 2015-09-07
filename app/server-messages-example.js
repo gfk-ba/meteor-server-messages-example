@@ -36,7 +36,7 @@ if (Meteor.isClient) {
     Notifications.info(subject, message, options);
   });
 
-  serverMessages.listen('serverMessage:warn', function (subject, message, options) {
+  serverMessages.listen('serverMessage:warning', function (subject, message, options) {
     Notifications.warn(subject, message, options);
   });
 
